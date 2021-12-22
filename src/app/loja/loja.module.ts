@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { LojaRoutingModule } from './loja-routing.module';
-import { HomeComponent } from './home/home.component';
-import { ClientesComponent } from './clientes/clientes.component';
+import { AppMaterialModule } from './../shared/app-material/app-material.module';
 import { AlimentosComponent } from './alimentos/alimentos.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { HomeComponent } from './home/home.component';
+import { LojaRoutingModule } from './loja-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AlimentosComponent } from './alimentos/alimentos.component';
   ],
   imports: [
     CommonModule,
-    LojaRoutingModule
+    LojaRoutingModule,
+    AppMaterialModule,
   ]
 })
 export class LojaModule { }
