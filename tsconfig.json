@@ -8,7 +8,7 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": true, // TALVEZ VOCE  PODE PRECISAR MUDAR ESSE AQUI PARA false (NO MEU PROJETO NÃO FOI NECESSARIO)
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -21,7 +21,9 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "strictPropertyInitialization": false // PARAMETRO MODIFICADO - VEJA: https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

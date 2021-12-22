@@ -1,0 +1,55 @@
+h1 {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 37px;
+  letter-spacing: 3px;
+  padding: 25px;
+}
+
+// Tabela
+.table-container{
+  padding: 0 10%;
+  margin-top: 20px;
+}
+
+.mat-table {
+  display: table;
+  width: 100%;
+  border: gray;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.mat-header-cell {
+  background: rgb(200, 200, 200);
+  color: black;
+  font-weight: bold;
+}
+.mat-cell {
+  text-align: left;
+  justify-content:left;
+
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+// Secção de filtro e botão de add
+.head-container{
+  padding: 0 10%;
+  margin-top: 20px;
+}
+
+.filter {
+  width: 90%;
+  font-size: 22px;
+  color: gray;
+}
+
+.add-button{
+  color:white;
+  background-color: black;
+}
