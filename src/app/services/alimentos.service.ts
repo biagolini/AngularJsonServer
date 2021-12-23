@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { AlimentosEntity } from '../models/db.model';
@@ -22,13 +22,24 @@ export class AlimentosService {
     return this.httpClient.get<AlimentosEntity[]>(this.url);
   }
 
-  addData(novoDado: AlimentosEntity) {
-    return this.httpClient.post<AlimentosEntity>(this.url, novoDado);
+  getTuple(tupleId: string) {
+    let params = new HttpParams().set('id', tupleId); // Exige que importe o HttpParams
+    return this.httpClient.get<AlimentosEntity[]>(this.url,{params: params });
   }
+
+
 
   deleteData(id: string) {
     return this.httpClient.delete<AlimentosEntity>(this.url + id);
   }
 
+  addData(newData: AlimentosEntity) {
+    return this.httpClient.post<AlimentosEntity>(this.url, newData);
+  }
+
+  editTuple(editData: AlimentosEntity) {
+    const id = editData.id;
+    return this.httpClient.put<AlimentosEntity>(this.url+id, editData);
+  }
 
 }

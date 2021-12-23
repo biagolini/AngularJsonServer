@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams  } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { ClientesEntity } from '../models/db.model';
@@ -23,6 +23,11 @@ export class ClientesService {
     return this.httpClient.get<ClientesEntity[]>(this.url);
   }
 
+  getTuple(tupleId: string) {
+    let params = new HttpParams().set('id', tupleId); // Exige que importe o HttpParams
+    return this.httpClient.get<ClientesEntity[]>(this.url,{params: params });
+  }
+
   addData(novoDado: ClientesEntity) {
     return this.httpClient.post<ClientesEntity>(this.url, novoDado);
   }
@@ -30,4 +35,10 @@ export class ClientesService {
   deleteData(id: string) {
     return this.httpClient.delete<ClientesEntity>(this.url + id);
   }
+
+  editTuple(editData: ClientesEntity) {
+    const id = editData.id;
+    return this.httpClient.put<ClientesEntity>(this.url+id, editData);
+  }
+
 }

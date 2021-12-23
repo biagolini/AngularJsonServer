@@ -1,0 +1,39 @@
+// Cores ao redor da linha da caixa de texto
+$color-outline: black;
+mat-form-field {
+      // to change border color
+      ::ng-deep .mat-form-field-outline {
+           color: $color-outline !important;
+      }
+      // to change label color
+      ::ng-deep .mat-form-field-label {
+           color: $color-outline !important;
+      }
+}
+
+
+h2 {
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.full-width {
+  width: 100%;
+  text-align: left;
+}
+
+.submit-button {
+  padding: 0px;
+  background-color:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 60px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+<div fxLayoutGap="20px" fxLayout="column" fxLayoutAlign="space-between start">
+  <!-- Head-->
+  <div class="full-width"  fxLayout="row" fxLayoutAlign="space-between center" >
+    <!-- Descrição do dialog -->
+    <h2 class="full-width"> {{form.value['id']?"Atualizar o registro de um alimento":"Adicionar um novo alimento"}} </h2>
+    <!-- Botão Cancelar -->
+    <button mat-flat-button mat-dialog-close><mat-icon>close</mat-icon></button>
+  </div>
+
+  <!-- Form-->
+  <form [formGroup]="form" fxLayout="column" class="full-width">
+    <!-- input descricao -->
+    <mat-form-field appearance="outline" class="half-width">
+      <mat-label>Descrição</mat-label>
+      <input formControlName="descricao" name="descricao" matInput>
+      <mat-error *ngIf="form.get('descricao')?.errors?.['descricao']">Informe um descrição</mat-error>
+    </mat-form-field>
+
+    <!-- input valor -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Valor</mat-label>
+      <input formControlName="valor" type="number" min="0.01" step="0.01" name="valor" matInput>
+      <mat-error *ngIf="form.get('valor')?.errors?.['valor']">Informe um valor</mat-error>
+    </mat-form-field>
+  </form>
+
+  <!-- Botão 1: Enviar dados-->
+  <button mat-flat-button  mat-dialog-close class="submit-button" (click)="onSubmit();" [disabled]="!form.valid">{{form.value['id']?"Atualizar":"Adicionar"}} </button>
+</div>
