@@ -1,0 +1,51 @@
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 37px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0px;
+  border: none;
+  height: 73px;
+  align-items: center;
+  font: normal normal 600 25px/33px Arial;
+}
+
+.background {
+  background: black;
+  height: 100vh; // Estende a coloração do fundo
+  width: 100vw; // Estende a coloração do fundo
+}
+
+.login-container {
+  background: #ffffff;
+
+  height: 500px;
+  width: 650px;
+}
+.inner-container {
+  background: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 90%;
+  width: 90%;
+}
+
+.login-button {
+  background-color: black;
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+  font-size: 22px;
+  background-color: #ffffff;
+}
+.mat-form-field {
+  width: 100%;
+}
