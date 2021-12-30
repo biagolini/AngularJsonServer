@@ -17,4 +17,8 @@ export class AuthService {
       this.userAuth = false;
     }
   }
+
+  isUserAuth(){
+    return this.userAuth;
+  }
 }
