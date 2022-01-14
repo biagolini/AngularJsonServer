@@ -1,5 +1,6 @@
 import { HttpClient, HttpParams  } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { take } from 'rxjs/operators';
 
 import { ClientesEntity } from '../models/db.model';
 
@@ -20,16 +21,17 @@ export class ClientesService {
   }
 
   getAllData() {
-    return this.httpClient.get<ClientesEntity[]>(this.url);
+    return this.httpClient.get<ClientesEntity[]>(this.url).pipe(take(1)); // ou firts()
+
   }
 
   getTuple(tupleId: string) {
     let params = new HttpParams().set('id', tupleId); // Exige que importe o HttpParams
-    return this.httpClient.get<ClientesEntity[]>(this.url,{params: params });
+    return this.httpClient.get<ClientesEntity[]>(this.url,{params: params }).pipe(take(1));
   }
 
   addData(novoDado: ClientesEntity) {
-    return this.httpClient.post<ClientesEntity>(this.url, novoDado);
+    return this.httpClient.post<ClientesEntity>(this.url, novoDado)
   }
 
   deleteData(id: string) {

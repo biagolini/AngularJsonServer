@@ -1,17 +1,12 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-
-
-
-
 import { ClientesService } from 'src/app/services/clientes.service';
 
-import { ClientesEntity } from './../../models/db.model';
 import { UpdateClientesComponent } from '../update/update-clientes/update-clientes.component';
+import { ClientesEntity } from './../../models/db.model';
 
 
 @Component({

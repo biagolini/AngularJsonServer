@@ -6,7 +6,7 @@
       "valor": 40
     },
     {
-    "id": "2",
+      "id": "2",
       "descricao": "Pizza de calabresa",
       "valor": 40
     },
@@ -16,11 +16,10 @@
       "valor": 7.5
     },
     {
-    "id": "4",
+      "id": "4",
       "descricao": "Suco de laranja",
       "valor": 8
     }
-
   ],
   "clientes": [
     {
@@ -38,7 +37,7 @@
     {
       "id": "3",
       "nome": "Arthur Oliveira",
-      "cidade": "Brasília",
+      "cidade": "São Paulo",
       "idade": 25
     },
     {

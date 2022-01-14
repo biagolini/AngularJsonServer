@@ -1,8 +1,14 @@
 <div fxLayoutGap="20px" fxLayout="column" fxLayoutAlign="space-between start">
   <!-- Head-->
-  <div class="full-width"  fxLayout="row" fxLayoutAlign="space-between center" >
+  <div class="full-width" fxLayout="row" fxLayoutAlign="space-between center">
     <!-- Descrição do dialog -->
-    <h2 class="full-width"> {{form.value['id']?"Atualizar o registro de um alimento":"Adicionar um novo alimento"}} </h2>
+    <h2 class="full-width">
+      {{
+        form.value["id"]
+          ? "Atualizar o registro de um alimento"
+          : "Adicionar um novo alimento"
+      }}
+    </h2>
     <!-- Botão Cancelar -->
     <button mat-flat-button mat-dialog-close><mat-icon>close</mat-icon></button>
   </div>
@@ -12,25 +18,46 @@
     <!-- input nome -->
     <mat-form-field appearance="outline" class="half-width">
       <mat-label>Nome</mat-label>
-      <input formControlName="nome" name="nome" matInput>
-      <mat-error *ngIf="form.get('nome')?.errors?.['nome']">Informe um nome</mat-error>
+      <input formControlName="nome" name="nome" matInput />
+      <mat-error *ngIf="form.get('nome')?.errors?.['nome']"
+        >Informe um nome</mat-error
+      >
     </mat-form-field>
 
     <!-- input cidade -->
     <mat-form-field appearance="outline" class="half-width">
       <mat-label>Cidade</mat-label>
-      <input formControlName="cidade" name="cidade" matInput>
-      <mat-error *ngIf="form.get('cidade')?.errors?.['cidade']">Informe um cidade</mat-error>
+      <input formControlName="cidade" name="cidade" matInput />
+      <mat-error *ngIf="form.get('cidade')?.errors?.['cidade']"
+        >Informe um cidade</mat-error
+      >
     </mat-form-field>
 
     <!-- input idade -->
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Idade</mat-label>
-      <input formControlName="idade" type="number" min="0.01" step="0.01" name="idade" matInput>
-      <mat-error *ngIf="form.get('idade')?.errors?.['idade']">Informe uma idade</mat-error>
+      <input
+        formControlName="idade"
+        type="number"
+        min="0.01"
+        step="0.01"
+        name="idade"
+        matInput
+      />
+      <mat-error *ngIf="form.get('idade')?.errors?.['idade']"
+        >Informe uma idade</mat-error
+      >
     </mat-form-field>
   </form>
 
   <!-- Botão 1: Enviar dados-->
-  <button mat-flat-button  mat-dialog-close class="submit-button" (click)="onSubmit();" [disabled]="!form.valid">{{form.value['id']?"Atualizar":"Adicionar"}} </button>
+  <button
+    mat-flat-button
+    mat-dialog-close
+    class="submit-button"
+    (click)="onSubmit()"
+    [disabled]="!form.valid"
+  >
+    {{ form.value["id"] ? "Atualizar" : "Adicionar" }}
+  </button>
 </div>
