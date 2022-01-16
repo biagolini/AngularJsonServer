@@ -2,23 +2,315 @@
   "alimentos": [
     {
       "id": "1",
-      "descricao": "Pizza de mussarela",
-      "valor": 40
+      "nome": "Mussarela",
+      "descricao": "mussarela, rodelas de tomate e orégano",
+      "valor": 34.9
     },
     {
       "id": "2",
-      "descricao": "Pizza de calabresa",
-      "valor": 40
+      "nome": "Escarola",
+      "descricao": "escarola refogada, mussarela e orégano",
+      "valor": 35.7
     },
     {
       "id": "3",
-      "descricao": "Refrigerante",
-      "valor": 7.5
+      "nome": "Marguerita",
+      "descricao": "mussarela, rodelas de tomate e manjericão",
+      "valor": 33.6
     },
     {
       "id": "4",
-      "descricao": "Suco de laranja",
-      "valor": 8
+      "nome": "Atum",
+      "descricao": "mussarela, atum e cebola e orégano",
+      "valor": 49.4
+    },
+    {
+      "id": "5",
+      "nome": "Romana",
+      "descricao": "mussarela aliche e queijo parmesão e orégano",
+      "valor": 37.5
+    },
+    {
+      "id": "6",
+      "nome": "Calabresa",
+      "descricao": "mussarela, linguiça calabresa e cebola",
+      "valor": 30.1
+    },
+    {
+      "id": "7",
+      "nome": "Napolitana",
+      "descricao": "mussarela, rodelas de tomate, queijo parmesão e orégano",
+      "valor": 39.7
+    },
+    {
+      "id": "8",
+      "nome": "Brócolis",
+      "descricao": "brócolis refogado coberto com mussarela e alho",
+      "valor": 44.5
+    },
+    {
+      "id": "9",
+      "nome": "Siciliana",
+      "descricao": "mussarela, bacon e champignon ao molho rose",
+      "valor": 38.3
+    },
+    {
+      "id": "10",
+      "nome": "Lombinho",
+      "descricao": "mussarela, lombo defumado e cebola",
+      "valor": 44.6
+    },
+    {
+      "id": "11",
+      "nome": "Portuguesa",
+      "descricao": "mussarela, ovos, palmito, pimentão, ervilha, presunto e cebola",
+      "valor": 38.9
+    },
+    {
+      "id": "12",
+      "nome": "Alho e óleo",
+      "descricao": "mussarela, alho e queijo parmesão",
+      "valor": 46.4
+    },
+    {
+      "id": "13",
+      "nome": "Palmito",
+      "descricao": "mussarela, palmito e orégano",
+      "valor": 35.5
+    },
+    {
+      "id": "14",
+      "nome": "Camarão",
+      "descricao": "camarão, molho de tomate, mussarela e catupiry",
+      "valor": 37.1
+    },
+    {
+      "id": "15",
+      "nome": "Toscana",
+      "descricao": "linguiça calabresa bacon e catupiry",
+      "valor": 48.6
+    },
+    {
+      "id": "16",
+      "nome": "Mineira",
+      "descricao": "mussarela, catupiry e milho verde",
+      "valor": 45.8
+    },
+    {
+      "id": "17",
+      "nome": "Pepperoni",
+      "descricao": "mussarela, pepperoni e cebola",
+      "valor": 36.4
+    },
+    {
+      "id": "18",
+      "nome": "Bacon",
+      "descricao": "mussarela coberta com bacon e orégano",
+      "valor": 42.6
+    },
+    {
+      "id": "19",
+      "nome": "Mista",
+      "descricao": "mussarela, presunto e orégano",
+      "valor": 48.7
+    },
+    {
+      "id": "20",
+      "nome": "Califórnia",
+      "descricao": "mussarela, presunto, salada de frutas e orégano",
+      "valor": 37
+    },
+    {
+      "id": "21",
+      "nome": "Vegetariana",
+      "descricao": "mussarela, pimentão, cebola, azeitona, ervilha, tomate, palmito, milho e orégano",
+      "valor": 33.5
+    },
+    {
+      "id": "22",
+      "nome": "Frango",
+      "descricao": "molho de tomate, mussarela e frango",
+      "valor": 31.1
+    },
+    {
+      "id": "23",
+      "nome": "Frango com Catupiry",
+      "descricao": "molho de tomate, mussarela, frango e catupiry",
+      "valor": 39.2
+    },
+    {
+      "id": "24",
+      "nome": "Bolonhesa",
+      "descricao": "mussarela, molho a bolonhesa e orégano",
+      "valor": 34.7
+    },
+    {
+      "id": "25",
+      "nome": "Rúcula com Tomate Seco",
+      "descricao": "mussarela, rúcula, tomate seco e orégano",
+      "valor": 34.9
+    },
+    {
+      "id": "26",
+      "nome": "Champignon",
+      "descricao": "mussarelam champignon e orégano",
+      "valor": 39.4
+    },
+    {
+      "id": "27",
+      "nome": "Espanhola",
+      "descricao": "presunto, mussarela, calabresa e cebola",
+      "valor": 37.5
+    },
+    {
+      "id": "28",
+      "nome": "Berinjela",
+      "descricao": "berinjela, cebola, parmesão, mussarela e azeitona preta",
+      "valor": 32.9
+    },
+    {
+      "id": "29",
+      "nome": "Brasileira",
+      "descricao": "ervilha, milho, palmito, tomate, mussarela e manjericão",
+      "valor": 33.3
+    },
+    {
+      "id": "30",
+      "nome": "Aliche",
+      "descricao": "mussarela, aliche e tomates",
+      "valor": 35.6
+    },
+    {
+      "id": "31",
+      "nome": "Quatro queijos",
+      "descricao": "mussarela, provolone, parmesão e catupiry",
+      "valor": 46
+    },
+    {
+      "id": "32",
+      "nome": "Havaiana",
+      "descricao": "mussarela, lombo e abacaxi",
+      "valor": 40.3
+    },
+    {
+      "id": "33",
+      "nome": "Italiana",
+      "descricao": "mussarela, parmesão, salame italiano e tomates",
+      "valor": 31
+    },
+    {
+      "id": "34",
+      "nome": "Parmegiana",
+      "descricao": "presunto, mussarela, molho parmegiana",
+      "valor": 40.5
+    },
+    {
+      "id": "35",
+      "nome": "Tropical",
+      "descricao": "mussarela, frango, milho, ervilha, ovos e catupiry",
+      "valor": 41.9
+    },
+    {
+      "id": "36",
+      "nome": "Canadense",
+      "descricao": "mussarela, lombo, champignon, palmito e catupiry",
+      "valor": 33.6
+    },
+    {
+      "id": "37",
+      "nome": "Strogonoff",
+      "descricao": "mussarela, champignon, strogonoff de frango e batata palha",
+      "valor": 41.6
+    },
+    {
+      "id": "38",
+      "nome": "Bauru",
+      "descricao": "Presunto, mussarela, tomate, orégano e azeitonas",
+      "valor": 41.3
+    },
+    {
+      "id": "39",
+      "nome": "Carne Seca",
+      "descricao": "Carne seca, mussarela, cebola, parmesão e orégano",
+      "valor": 31.6
+    },
+    {
+      "id": "40",
+      "nome": "Gorgonzola",
+      "descricao": "Gorgonzola, tomate, orégano e azeitonas.",
+      "valor": 49
+    },
+    {
+      "id": "41",
+      "nome": "Monte você mesmo - Salgado",
+      "descricao": "Escolha até 4 ingredientes do cardápio salgado",
+      "valor": 40
+    },
+    {
+      "id": "42",
+      "nome": "Nutella com Morango",
+      "descricao": "nutella e morango",
+      "valor": 50
+    },
+    {
+      "id": "43",
+      "nome": "Banana com Canela",
+      "descricao": "banana caramelizada, leite condensado e canela",
+      "valor": 35.8
+    },
+    {
+      "id": "44",
+      "nome": "Chocolate",
+      "descricao": "chocolate preto ou branco",
+      "valor": 40.7
+    },
+    {
+      "id": "45",
+      "nome": "Prestígio",
+      "descricao": "chocolate, coco ralado e leite condensado",
+      "valor": 49
+    },
+    {
+      "id": "46",
+      "nome": "Romeu e Julieta",
+      "descricao": "goiabada e mussarela",
+      "valor": 34.3
+    },
+    {
+      "id": "47",
+      "nome": "Sensação",
+      "descricao": "chocolate, granulado e morangos",
+      "valor": 39.9
+    },
+    {
+      "id": "48",
+      "nome": "Beijinho",
+      "descricao": "chocolate branco, coco e leite condensado",
+      "valor": 45.6
+    },
+    {
+      "id": "49",
+      "nome": "M&M",
+      "descricao": "chocolate e M&M",
+      "valor": 31.1
+    },
+    {
+      "id": "50",
+      "nome": "Sorvete",
+      "descricao": "chocolate e sorvete",
+      "valor": 30.8
+    },
+    {
+      "id": "51",
+      "nome": "Paçoca",
+      "descricao": "chocolate e paçoca de amendoim",
+      "valor": 45
+    },
+    {
+      "id": "52",
+      "nome": "Monte você mesmo - Doce",
+      "descricao": "Escolha até 4 ingredientes do cardápio doce",
+      "valor": 50
     }
   ],
   "clientes": [
@@ -45,6 +337,54 @@
       "nome": "Alice Souza",
       "cidade": "Salvador",
       "idade": 42
+    },
+    {
+      "id": "5",
+      "nome": "Ranya Peixoto",
+      "cidade": "São Paulo",
+      "idade": 28
+    },
+    {
+      "id": "6",
+      "nome": "Guilherme Marques Assis",
+      "cidade": "Brasília",
+      "idade": 35
+    },
+    {
+      "id": "7",
+      "nome": "Yuri  Aguiar",
+      "cidade": "São Paulo",
+      "idade": 35
+    },
+    {
+      "id": "8",
+      "nome": "Alice Souza",
+      "cidade": "Sorocaba",
+      "idade": 42
+    },
+    {
+      "id": "9",
+      "nome": "Miguel Sacramento",
+      "cidade": "São João",
+      "idade": 18
+    },
+    {
+      "id": "10",
+      "nome": "Simone Sarmento",
+      "cidade": "Riberão Pretoo",
+      "idade": 30
+    },
+    {
+      "id": "11",
+      "nome": "Tulio Dias",
+      "cidade": "Jundiai",
+      "idade": 45
+    },
+    {
+      "id": "12",
+      "nome": "Iovne Soares",
+      "cidade": "Santos",
+      "idade": 58
     }
   ]
 }

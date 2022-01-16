@@ -24,7 +24,7 @@ export class AlimentosComponent implements OnInit {
     }
     // Variáveis
     copyDB:  any[] = [];
-    displayedColumns: string[] = ['id', 'descricao', 'valor', 'actions'];
+    displayedColumns: string[] = ['id', 'nome', 'descricao', 'valor', 'actions'];
     dataSource: MatTableDataSource<AlimentosEntity>;
 
     /* ------------------METODOS------------------*/

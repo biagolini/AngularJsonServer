@@ -4,6 +4,7 @@ export interface Loja {
 }
 export interface AlimentosEntity {
   id?: string;
+  nome: string;
   descricao: string;
   valor: number;
 }
