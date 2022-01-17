@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
- private userAuth: boolean = false;
+ private userAuth: boolean = true;
   constructor(private router: Router) { }
 
   doLogin(login: string, password: string){

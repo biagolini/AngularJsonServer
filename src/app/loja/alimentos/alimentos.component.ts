@@ -33,9 +33,13 @@ export class AlimentosComponent implements OnInit {
         this.copyDB = x,
         this.dataSource = new MatTableDataSource<AlimentosEntity>(this.copyDB);
 
+        console.log('teste')
+        console.log(this.dataSource.data.length>0)
+
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
     });
+
     }
     // Método de Filtro para dados em exibição na tabela
     applyFilter(event: Event) {
@@ -129,5 +133,9 @@ export class AlimentosComponent implements OnInit {
         console.log('Operação cancelada');
       }
     })
+  }
+  testData(){
+    console.log(this.dataSource.data.length)
+    return (this.dataSource.data.length>0);
   }
 }
